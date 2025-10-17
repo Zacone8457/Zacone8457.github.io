@@ -1,0 +1,36 @@
+body {
+  background-color: #ffdacc;
+}
+
+p {
+  font-family: "Times New Roman";
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  float: left;
+  text-decoration: none;
+  background-color: #fff4f0;
+}
+
+nav li:hover {
+  background-color: #ffe9e0;
+}
+
+main {
+  margin: 20px, 40px;
+  padding: 10px, 20px;
+}
+
+main section {
+  box-shadow: 5px, 5px, #000000;
+}
+
+footer {
+  font-size: 14px
+  text-align: center;
+  background-color: #fff4f0;
+}
