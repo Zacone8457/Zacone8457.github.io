@@ -1,31 +1,26 @@
-/* Colors (Light to Dark):
-#bdb5d5 - Text Color
-#c3bcd9 - Counter-Highlight Text Color
-Mono:
-#474451 - Background
-#33303a - Sub-Heading
-#1f1d24 - Heading
-Triad:
-#51444c - Highlighted Text Color
-*/
+:root {
+  --colorA: #333;
+  --colorB: #555;
+  --colorC: #222;
+}
 
 body {
-  background-color: #474451;
-  margin: 0px;
-  font-family: Arial;
-  color: #bdb5d5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  overflow: hidden;
 }
 
 header h1 {
   text-align: center;
-  background-color: #1f1d24;
-  padding: 40px;
-  margin: 0px;
+  background-color: var(--colorA);
+  padding: 20px;
+  margin: 0;
 }
 
 nav ul{
   display: flex;
-  background-color: #33303a;
+  background-color: var(--colorB);
   justify-content: center;
   width: 100%;
   float: left;
@@ -36,7 +31,7 @@ nav ul{
 }
 
 nav a {
-  color: #bdb5d5;
+  color: #ffffff;
   display: inline-block;
   text-decoration: none;
   padding: 10px;
@@ -47,8 +42,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #c3bcd9;
-  background-color: #51444c;
+  background-color: var(--colorA);
   border-radius: 10px;
 }
 
@@ -56,18 +50,43 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 10px 20px;
+  padding: 10px 20px;;
+  transition: transform 0.5s ease-in-out;
+}
+
+main:hover {
+  transform: scale(1.05);
+}
+
+table {
+  text-align: center;
+  border-spacing: 3px;
+}
+
+th {
+  background-color: var(--colorC);
+}
+
+th, td {
+  padding: 5px;
+  border: 1px solid #000;
 }
 
 footer {
   font-size: 0.9em;
   text-align: center;
-  background-color: #33303a;
+  background-color: var(--colorA);
   padding: 10px;
+  position: fixed;
 }
 
+img {
+  max-width: 200px;
+  max-height: 200px;
+}
+/* Classes */
 .card {
-background-color: #33303a; 
+background-color: var(--colorA); 
 border-radius: 8px;
 padding: 20px 20px;
 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
@@ -78,4 +97,8 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 .card:hover {
 transform: translateY(-5px) scale(1.02);
 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bgCols {
+  background-color: var(--colorB);
 }
