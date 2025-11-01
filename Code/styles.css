@@ -77,12 +77,35 @@ footer {
   text-align: center;
   background-color: var(--colorA);
   padding: 10px;
-  position: fixed;
 }
 
 img {
   max-width: 200px;
   max-height: 200px;
+}
+
+input, textarea {
+  outline-color: transparent;
+}
+
+input:focus, textarea:focus {
+  outline-color: #000;
+  transition: outline-color 0.5s ease;
+}
+
+input[type="submit"] {
+  text-align: center;
+  color: #ffffff;
+  border-color: transparent;
+  background-color: #008CBA;
+  cursor: pointer;
+  transition: background-color 0.5s ease
+}
+
+input[type="submit"]:hover {
+  border-color: transparent;
+  background-color: #04AA6D;
+  transition: background-color 0.5s ease;
 }
 /* Classes */
 .card {
@@ -101,4 +124,11 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 
 .bgCols {
   background-color: var(--colorB);
+}
+
+/* Identifications */
+#Contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
